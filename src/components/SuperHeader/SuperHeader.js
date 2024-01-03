@@ -29,12 +29,18 @@ const Wrapper = styled.div`
 
   /* New styles */
   display: flex;
+  align-items: center;
   gap: 24px;
-  padding: 12px 32px 8px 32px;
+  min-height: 40px;
+  padding-left: 32px;
+  padding-right: 32px;
 `;
 
 const MarketingMessage = styled.span`
   color: ${COLORS.white};
+
+  /* New styles */
+  margin-right: auto;
 `;
 
 const HelpLink = styled.a`
@@ -45,9 +51,6 @@ const HelpLink = styled.a`
   &:not(:focus-visible) {
     outline: none;
   }
-
-  /* New styles */
-  transform: translateY(3px);
 `;
 
 export default SuperHeader;
